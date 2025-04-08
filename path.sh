@@ -12,7 +12,6 @@ fi
 #export PATH="/home/janto/usr/local/anaconda3/bin:$PATH"
 #export CPATH=$HOME/usr/local/cudnn-v5.1/include:$CPATH
 #export LIBRARY_PATH=$HOME/usr/local/cudnn-v5.1/lib64:/usr/local/cuda/lib64:/usr/local/cuda/lib:$LIBRARY_PATH
-#
 #KERAS_PATH=$(pwd -P)/keras
 #HYP_PATH=$(pwd -P)/hyperion
 #
