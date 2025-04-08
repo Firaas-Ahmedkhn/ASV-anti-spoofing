@@ -58,7 +58,7 @@ def test_Detector(model_id=0):
     model = Detector(**model_params)
     model_params = sum(p.numel() for p in model.parameters() if p.requires_grad)
     print('model contains {} parameters'.format(model_params))
-    # print(model)
+    print(model)
     x = torch.randn(2,1,257,400)
     output = model(x)
     print(x.size())
