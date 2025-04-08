@@ -37,7 +37,7 @@ def main(run_id, pretrained, data_files, model_params, training_params, device):
     n_warmup_steps = training_params['n_warmup_steps']
     log_interval = training_params['log_interval']
 
-    # model is trained for binary classification (for datalaoder) 
+    # model is trained for binary classification  
     if model_params['NUM_SPOOF_CLASS'] == 2: 
         binary_class = True 
     else: binary_class = False 
