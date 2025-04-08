@@ -1,10 +1,24 @@
-# ASV-anti-spoofing-with-Res2Net
-This repository provides the implementation of the paper:
-[Replay and Synthetic Speech Detection with Res2Net architecture](https://arxiv.org/abs/2010.15006) (ICASSP 2021).
+# ASV-anti-spoofing
+This repository focuses on building and evaluating models to detect spoofed audio in speaker verification systems.
+We selected three models to experiment with for this task:
+1. VGG + SincNet-based Model
+Based on the paper "Detecting Spoofing Attacks Using VGG and SincNet: BUT-Omilia Submission to ASVspoof 2019 Challenge" by Hossein Zeinali, Themos Stafylakis, Georgia Athanasopoulou, Johan Rohdin, Ioannis Gkinis, Lukáš Burget, and Jan "Honza" Černocký.
+Detailed documentation is available at: 
+ASV-anti-spoofing/Documentations/VGG+SincNet-based-Model
+2. Res2Net-based Model
+Based on the paper "Replay and Synthetic Speech Detection with Res2Net Architecture" by Xu Li, Na Li, Chao Weng, Xunying Liu, Dan Su, Dong Yu, and Helen Meng.
+Detailed documentation is available at: 
+ASV-anti-spoofing/Documentations/Res2Net
+3.  Light Convolutional GRU-RNN Feature Extractor
+Detailed documentation is available at: 
+ASV-anti-spoofing/Documentations/Light-Conv-GNU-RNN
+Based on the paper:
+"A Light Convolutional GRU-RNN Deep Feature Extractor for ASV Spoofing Detection" by Alejandro Gomez-Alanis, Antonio M. Peinado, Jose A. Gonzalez, and Angel M. Gomez.
 
-Please notice that we have another work that is an extension of this work. If you are interested in that, please see [Paper](https://arxiv.org/pdf/2107.08803.pdf) and [Codes](https://github.com/lixucuhk/Channel-wise-Gated-Res2Net).
 
-## System Architecture
+
+## Model Implementation
+In this repository, we have implemented the second model: "Replay and Synthetic Speech Detection with Res2Net Architecture".
 
 1. ResNet blocks
 <div  align="center"> <img src="./result_table_figure/resnet-blocks.png" width = "400" height = "600" align=center /></div>
@@ -75,20 +89,3 @@ Please notice that we have another work that is an extension of this work. If yo
    ```bash
    python scoring/evaluate_tDCF_asvspoof19.py scoring/la_asv_scores/ASVspoof2019.LA.asv.eval.gi.trl.scores.txt NameofScoringFile.txt
    ```
-
-## Citation
-If this repo is helpful with your research or projects, please kindly star our repo and cite our paper as follows:
-```
-@article{li2020replay,
-  title={Replay and Synthetic Speech Detection with Res2net Architecture},
-  author={Li, Xu and Li, Na and Weng, Chao and Liu, Xunying and Su, Dan and Yu, Dong and Meng, Helen},
-  journal={arXiv preprint arXiv:2010.15006},
-  year={2020}
-}
-```
-
-## Contact
-
-- [Xu Li](https://lixucuhk.github.io/) at the Chinese University of Hong Kong (xuli@se.cuhk.edu.hk, xuliustc1306@gmail.com)
-- If you have any questions or suggestions, please feel free to contact Xu Li via xuli@se.cuhk.edu.hk or xuliustc1306@gmail.com.
-
